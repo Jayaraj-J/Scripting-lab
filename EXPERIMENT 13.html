@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>EXPERIMENT 13</title>
+<script>
+function check()
+{
+var n,i;
+var elements=[];
+n = parseInt(document.getElementById("size").value);
+for(i=0;i<n;i++)
+{
+elements[i]=prompt("Enter the elements:");
+}
+document.write("THE ARRAY ELEMENTS ARE: ");
+for(i=0;i<n;i++){
+document.write(""+elements[i]+",");
+}
+var n=elements.slice(2,3);
+var en=elements.slice(-2,-1);
+var m=elements.slice();
+document.write("<br>");
+document.write("THE SLICE IS: "+n+".");
+document.write("<br>");
+document.write("THE SLICE IS: "+en+".");
+document.write("<br>");
+document.write("THE SLICE IS: "+m+".");
+document.write("<br>");
+}
+</script>
+</head>
+<body>
+<p>ENTER THE COUNT: <input type="text" id="size"></p>
+<button onclick="check()">ELEMENTS ARE</button>
+
+</body>
+</html>
